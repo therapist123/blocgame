@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <h1>
+      bloc game
+    </h1>
+  </head>
+  
+  <div id="collectblocs">
+    <button onclick="collectbloc">Make Bloc</button>
+  </div>
+  
+  <div id="resources">
+    <p id="bloccounter"></p>
+  </div>
+  
+  <script>
+    var blocs = 0;
+    
+    function collectbloc() {
+      blocs = blocs + 1;
+    }
+    
+    setInterval(reloadvars, 100);
+    function reloadvars() {
+      document.getElementById("bloccounter").innerHTML = blocs + "Blocs";
+    }
+  </script>
+</html>
