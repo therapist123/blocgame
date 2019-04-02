@@ -14,8 +14,9 @@
   <div id="resources">
     <h2>Resources</h2>
     
-    <p id="bloccounter"></p>
   </div>
+  
+  <p id="bloccounter"></p>
   
   <script>
   var blocs = 0;
@@ -25,7 +26,7 @@
   }
     
   setInterval(reloadvars, 1000);
-    function reloadvars() {
+  function reloadvars() {
     document.getElementById("bloccounter").innerHTML = blocs + " Blocs";
   }
   </script>
